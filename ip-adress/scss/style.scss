@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    header{
+        width: 100%;
+        max-width: 1440px;
+        height: 280px;
+        display: flex;
+        justify-content: center;
+
+        background-image: url(../img/header-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 33px;
+        .container{
+            width: 100%;
+            max-width: 560px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                font-family: "Rubik", sans-serif;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 30px;
+                letter-spacing: -0.29px;
+                color: #FFFFFF;
+                margin-bottom: 31px;
+            }
+            label{
+                width: 100%;
+                max-width: 555px;
+                height: 58px;
+                border-radius: 15px;
+                background-color: #FFFFFF;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                overflow: hidden;
+                input{
+                    width: 100%;
+                    max-width: 480px;
+                    height: 50px;
+                    border: none;
+                    margin-left: 20px;
+                    outline: none;
+                }
+                .arrow{
+                    width: 58px;
+                    height: 58px;
+                    background: #000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+
+            }
+        }
+    }
+    .main{
+        width: 100%;
+        max-width: 1440px;
+        min-height: 100px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        .adress-info{
+            position: absolute;
+            width: 100%;
+            max-width: 1110px;
+            height: 161px;
+            top: -80px;
+            padding: 32px;
+
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #FFFFFF;
+            border-radius: 15px;
+
+            .card{
+                width: 100%;
+                max-width: 246px;
+                height: 88px;
+                border-right: 1px solid #0000003a;
+                user-select: none;
+                &:last-child{
+                    border: none;
+                }
+                h4{
+                    font-family: "Rubik", sans-serif;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14.22px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.75px;
+                    color: #2C2C2C;
+                    opacity: 49.87%;
+                    margin-bottom: 13px;
+                }
+                h2{
+                    font-family: "Rubik", sans-serif;
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 30px;
+                    letter-spacing: -0.23px;
+                    color: #2C2C2C;
+                }
+            }
+        }
+        iframe{
+            width: 100%;
+            max-width: 1440px;
+            height: 577px;
+            transform: translateY(-150px);
+            z-index: -1;
+        }
+        
+    }
+}
+
+@media (max-width: 1100px) (min-width: 930px){
+    body{
+        .main{
+            .adress-info{
+                width: 100%;
+                max-width: 327px;
+                height: 294px;
+                transform: translateY(-20px);
+                flex-wrap: wrap;
+
+                .card{
+                    width: 100%;
+                    max-width: 246px;
+                    height: 43px;
+                    border-right: none;
+                    user-select: none;
+                    &:last-child{
+                        border: none;
+                    }
+                    h4{
+                        font-family: "Rubik", sans-serif;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 14.22px;
+                        text-transform: uppercase;
+                        letter-spacing: 1.75px;
+                        color: #2C2C2C;
+                        opacity: 49.87%;
+                        margin-bottom: 13px;
+                    }
+                    h2{
+                        font-family: "Rubik", sans-serif;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 14px;
+                        letter-spacing: -0.23px;
+                        color: #2C2C2C;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 929px){
+    body{
+        header{
+            background-image: url(../img/header-mobile-bg.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    }
+}
